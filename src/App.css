@@ -1,16 +1,9 @@
+* {
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {
@@ -19,20 +12,162 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: flex-start;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.form {
+  display: flex;
+  padding: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input {
+  font-size: 16px;
+  margin: 0 10px;
+  background-color: lightgray;
+  border: 2px solid #282c34;
+  border-radius: 5px;
+  width: 216px;
+  height: 40px;
+  text-align: center;
+  transition: border-color 1s linear;
+}
+
+.input:focus{
+  outline: none;
+}
+
+.inputError {
+  font-size: 16px;
+  margin: 0 10px;
+  background-color: lightgray;
+  border: 2px solid red;
+  border-radius: 5px;
+  width: 216px;
+  height: 40px;
+  text-align: center;
+  transition: border-color 0.2s linear;
+
+}
+
+.inputError:focus{
+  outline: none;
+}
+
+.addButton {
+  color: white;
+  font-size: 16px;
+  margin: 0 10px;
+  width: 40px;
+  height: 40px;
+  background-color: #282c34;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.removeButton {
+  color: white;
+  font-size: 16px;
+  margin: 0 10px;
+  width: 40px;
+  height: 40px;
+  background-color: #282c34;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.enteredWord {
+  display: flex;
+  margin: 10px;
+}
+
+.button0 {
+  cursor: pointer;
+  margin: 0 10px;
+  font-size: 16px;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  border-radius: 5px;
+  background: darkgray;
+  color: white;
+}
+
+.button1 {
+  cursor: pointer;
+  margin: 0 10px;
+  font-size: 16px;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  border-radius: 5px;
+  background: white;
+  color: gray;
+}
+
+.button2 {
+  cursor: pointer;
+  margin: 0 10px;
+  font-size: 16px;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  border-radius: 5px;
+  background: orange;
+  color: white;
+}
+
+.container {
+  display: flex;
+  font-size: 16px;
+  width: 100%;
+  max-width: 600px;
+  justify-content: space-around;
+}
+
+.subHeader {
+  width: 33%;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.left {
+  font-family: monospace;
+}
+
+.left p {
+  cursor: pointer;
+  margin: 0px;
+}
+
+.center {
+  text-align: left;
+  font-family: monospace;
+}
+
+.center p {
+  margin: 0;
+  cursor: pointer;
+}
+
+.right {
+  text-align: left;
+  font-family: monospace;
+}
+
+.right p {
+  margin: 0;
+  cursor: pointer;
+}
+
+.includedChar {
+  color: aquamarine;
+}
+
+.selectedChar {
+  color: orange;
 }
